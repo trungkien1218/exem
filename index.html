@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            
+        }
+        main{
+            background: #DCDCDC;
+        }
+        header{
+            padding: 16px 0;
+            position: fixed;
+            z-index: 1;
+            max-width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgb (220,220,220, 0);
+        }
+        header .container{
+            display: flex;  
+           
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .container{
+            width: 100%;
+            max-width: 1420px;
+            display: block;
+            margin: 0 auto;
+            padding: 0 16px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .flex{
+            display: flex;
+            cursor: pointer;
+        }
+       header .logo{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        margin: 0 auto;
+        
+       }
+       header .main-nav ul{
+            display: flex;
+            list-style: none;
+        }
+        header ul a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            padding: 12px 24px;
+        }
+        header .ul-1 li{
+            display: block;
+            padding: 0 5px;
+            font-weight: 600;
+        }
+        header nav .ul-1{
+            margin-right: 30px;
+
+        }
+        header .center{
+           margin: auto 0;
+           
+        }
+        .btn{
+            padding: 14px 31px;
+            display: inline-block;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 0; 
+            margin-right: 14px;
+            background-color:rgb (220,220,220, 0);
+        }
+        .btn-primary{
+            background: black;
+            color: white;
+        }
+        .container-1{
+            width: 100%;
+            max-width: 1200px;
+            display: block;
+            margin: 0 auto;
+            padding: 0 16px;
+            align-items: center;
+            position: relative;
+        }
+        main .grid{
+        display: grid;
+        grid-template:auto / 1fr 1fr ;
+        align-items: center;
+        grid-gap: 0px;
+       }
+       main .grid-1{
+        display: grid;
+        grid-template:auto / 1fr 1fr ;
+        align-items: center;
+        grid-gap: 80px;
+        margin-bottom: 140px;
+       }
+       main .main-nav ul{
+            display: flex;
+            list-style: none;
+        }
+        main .main-nav li{
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border: 1px solid #ced1df;
+            border-radius: 8px;
+            background-color: #eeeff1;
+            display: block;
+            opacity: 1;
+            color: #000;
+            font-size: 16px;
+            line-height: 39px;
+            font-weight: 600
+        }
+        main .grid-2{
+            display: grid;
+            grid-template: auto/20% 80%;
+            grid-gap: 10px;
+        }
+        main .grid-3{
+            display: grid;
+            grid-template: auto/ 50% 50%;
+            grid-gap: 50px;
+            border: 1px solid black;
+            padding-bottom: 140px;
+            border-radius: 16px;
+        }
+        main .message-1{
+            display: grid;
+            grid-template: auto/ 50% 50%;
+            gap: 20px;
+            padding-top:60px ;
+            padding-bottom: 60px ;
+        }
+        main .message-1 input{
+            padding: 20px;
+            border-radius: 6px;
+            border: 0;
+            margin-top: 4px;
+        }
+        main .message textarea{
+            padding-right: 280px;
+            border-radius: 6px;
+            padding-top:10px ;
+            margin-top: 4px;
+            border: 0;
+            padding-left: 16px;
+            margin-bottom: 30px;
+        }
+        main .last{
+            justify-content: space-between;
+            display: flex;
+            margin-top: 140px;
+            
+
+        }
+        main .last a{
+            text-decoration: none;
+            color: rgb(0, 0, 0, 0.5);
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        .logo-1{
+            height: 30px;
+            width: 30px;
+            
+        }
+        .logo-left-all {
+          width: 35px;
+          height: 35px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 11px;
+        }
+        .logo-left {
+          background: #eeeff1 center no-repeat;
+          background-size: cover;
+          padding-top: 100%;
+          background-image: url(images/logo_1.jpg);
+        }
+
+        .logo-left:hover {
+          background-image: url(images/logo_2.jpg);
+          transition: 175ms;
+        }
+        
+        
+          
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flex">
+                <a href="#" class="logo"></a>
+                <nav class="main-nav center">
+                    <ul class="ul-1">
+                        <li><a href="index.html">
+                            <div class="logo-left-all"> <div class="logo-left"></div></div>
+                            <!-- <img src="images/logo_1.jpg" style="height: 35px; width: 35px;" class="loo-1">-->
+                               <span>Sebastian Petravic</span>
+                            </a>
+                        
+                        </li>
+
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <button class="btn">About</button>
+                <button class="btn">Contact</button>
+                <button class="btn btn-primary">View Work</button>
+            </div>
+            <div style="position: fixed;max-width: 100%; right: 14px;bottom: 14px;">
+                <div><a href="https://www.linkedin.com/in/sebastianpetravic/?original_referer=https%3A%2F%2Fsebastianpetravic.webflow.io%2F"><img src="images/hinh_1.jpg" alt="" class="logo-1"></a></div>
+                <div style="margin-top: 20px;"><a href="https://dribbble.com/bombasty/shots"><img src="images/hinh_2.jpg" alt="" class="logo-1"></a></div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container-1">
+            <div class="grid" style="padding-top: 100px; margin-bottom: 140px;">
+                <img src="images/main_1.jpg" style="height: 419px; width: 439px; margin-bottom: 50px; border-radius: 15px;">
+                <div> 
+                    <h2 style="font-size: 80px;font-weight: 500;">Hi there!</h2>
+                     <p style="font-size: 25px;line-height: 39px; font-weight: 300; opacity: 0.5;">Fuelled by a passion for designing compelling products, I have a deep desire to excel and continuously improve in my work. Learn more about my journey below.</p>
+                </div>
+            </div>
+            <div class="grid-1">
+                <div> 
+                    <h2 style="font-size: 44px; font-weight: 500;">My Career So Far</h2>
+                     <p style="font-size: 25px;line-height: 39px; font-weight: 300; opacity: 0.5;">Always up for a challenge, I have worked for lean start-ups and was a member of the first New Zealand start-up to attend Y Combinator, the largest start-up accelerator in the world. From there, I worked my way up to Art Director and Team Lead at Appster where I oversaw the design of 30+ mobile and desktop apps. Currently I am a Senior Product Designer at Linktree leading design for the Linktree mobile app</p>
+                </div>
+                <div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li>UI DESIGN</li>
+                            <li>UX DESIGN</li>
+                            <li>PROTOTYPING</li>
+                        </ul>
+                    </nav>
+                    <nav class="main-nav">
+                        <ul>
+                            <li>BRANDING</li>
+                            <li>HTML/CSS</li>
+                            <li>WIREFRAMING</li>
+                        </ul>
+                    </nav>
+                    <nav class="main-nav">
+                        <ul>
+                            <li>INFORMATION ARCHITECTURE</li>
+                        </ul>
+                    </nav>
+                    <nav class="main-nav">
+                        <ul>
+                            <li>USER RESEARCH</li>
+                            <li>USER INTERVIEWS</li>
+                        </ul>
+                    </nav>
+                    <nav class="main-nav">
+                        <ul>
+                            <li>LEADERSHIP</li>
+                            <li>FIGMA</li>
+                            <li>ADOBE SUITE</li>
+                        </ul>
+                    </nav>
+            </div>
+           
+           
+        </div>
+        <div>
+            <h3 style="margin: 20px 0 15px;font-size: 44px;line-height: 62px;font-weight: 500;">On Working With Me</h3>
+            <div class="grid-2" style=" margin-bottom: 140px;">
+                <div>
+                    <img src="images/main_2.jpg" style="height: 150px; width: 150px; margin-bottom: 50px; border-radius: 50%;">
+                    <p style="font-weight: 500; margin-bottom: 10px;font-size: 20px;">Lana Kinney</p>
+                    <p>UX Researcher at AKQA</p>
+
+                </div>
+               
+                
+                    
+                     <p style="font-size: 25px;line-height: 39px; font-weight: 300; opacity: 0.5;">"Sebastian is a guru at all things UX design, consistently producing intuitive, modern, and bold designs. He is a natural problem solver in the design space so everyone went to him if they were stuck on a feature or flow. He has a arsenal of design skills including animation and graphic design. Not to mention, Seb was a design team lead, which means he managed a full team of both onshore and offshore designs reviewing and providing feedback on all of their designs... Any business would be lucky to have him."</p>
+                
+            </div>
+            <div class="grid-3">
+                <h2 style="font-size: 64px;font-weight: 500; margin: 0 auto;padding: 60px; " class="center">Want to get in touch?</h2>
+
+                <div>
+                    <div class="message-1">
+                        <div >
+                            <p>Name</p>
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <p>Email Address</p>
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p>Message</p>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+                
+            </div>
+            <div class="last">
+               <a href="https://sebastianpetravic.webflow.io/"> <img src="images/logo_2.jpg" alt="" style="height: 40px; width: 40px;"></a>
+               <div> 
+                    <a href="https://dribbble.com/bombasty/shots">Dribbble</a>
+                    <a href="https://www.linkedin.com/in/sebastianpetravic/">Linkedin</a>
+                    <a href="index.html">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <p style="display: block; text-align: center; padding-bottom: 40px; margin-top: 40px;">Copyright © 2020 Sebastian Petravic. All rights reserved.</p>
+        </div>
+    </main>
+</body>
+</html>
